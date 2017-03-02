@@ -38,7 +38,6 @@ fprintf('Average rating for movie 1 (Toy Story): %f / 5\n\n', ...
 imagesc(Y);
 ylabel('Movies');
 xlabel('Users');
-
 fprintf('\nProgram paused. Press enter to continue.\n');
 pause;
 

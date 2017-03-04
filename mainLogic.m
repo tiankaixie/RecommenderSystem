@@ -10,6 +10,7 @@ fprintf('For usage, please type \"help\"\n');
 command = '';
 
 %% Main while loop
+movieList = loadMovieList();
 
 while (true) 
   command = input('$ ','s');
@@ -17,9 +18,9 @@ while (true)
   	imagesc(Y),colorbar;
   	ylabel('Movies');
   	xlabel('Users');
-  elseif strcmp(command,'searchMovie')==1
+  elseif strcmp(command,'search')==1
   	movieName = input('Please type the name of the movie:', 's');
-  	
+  	searchMovie(movieList, movieName, R, Y);
   elseif strcmp(command,'help')==1
   	listDoc;
   elseif strcmp(command,'quit')==1

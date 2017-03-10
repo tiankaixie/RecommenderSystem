@@ -14,5 +14,7 @@ function searchMovie(movieList, name ,R, Y)
 	fprintf('\n');
 	if count==0
 		fprintf('No results match name like \"%s".\n',name);
+	else
+		fprintf('For more information of the movie, use info command\n');
 	end
 endfunction
